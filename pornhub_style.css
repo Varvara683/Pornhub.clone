@@ -1,0 +1,265 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .top {
+        background-color: black;
+        color: white;
+        height: 23px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .top *:not(*:last-child) {
+        margin-right: 45px; 
+    }
+
+    .top *:first-child {
+        margin-left: 45px;
+    }
+
+    .middle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(37, 37, 37);
+        border-bottom: rgb(54, 54, 54) 1px solid;
+        height: 60px;
+    }
+
+    .middle :last-child {
+        margin-right: 20px;
+    }
+
+    .middle .left {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    .middle .left .hub {
+        display: flex;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 33px;
+        color: white;
+        position: absolute;
+        margin-left: 22px;
+    }
+
+    .middle .left .hub span:nth-child(2) {
+        background: #FF9900;
+        color: #000000;
+        border-radius: 5px;
+        padding: 0 3px 3px 3px;
+        display: flex;
+    }
+
+    .middle .left .search {
+        display: inline-block;
+        margin-left: 150px;
+        width: 520px;
+        height: 22px;
+        border: 1px solid rgb(77, 76, 76);
+        min-height: 20px;
+        background-color: rgb(66, 66, 66);
+        margin-right: 15px;
+        margin-left: 200px;
+        border-radius: 3px;
+    }
+
+    .middle .left .search input[type="search"] {
+        border: none; 
+        font-style: italic;
+        padding: 2px 5px;
+        font-weight: 500;
+        font-size: 14px;
+        outline: none; /* Убираем свечение в Chrome и Safari */
+        -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+        width: 340px; 
+        background-color: rgb(66, 66, 66);
+    }
+
+    .middle .left .search button {
+        width: 55px; 
+        height: 23px; 
+        border: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+        background-color: #FF9900;
+        color: black;
+        position: relative;
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    .middle .left .search button::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        background: 0px 0px url(sprite-pornhub-nf.png);
+        width: 17px;
+        height: 15px;
+        transform: translate(-50%, -50%);
+    }
+
+    .middle .left input {
+        border: none;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .middle .left button {
+        border-radius: 4px;
+        border: none;
+        color: white;
+        background-color: rgb(77, 75, 75);
+        padding: 6px 12px;
+        font-size: 12px;
+        height: 26px;
+        font-weight: 400;
+    }
+
+    .middle .left .videoUploadIcon{
+        fill: white;
+        width: 14px;
+        height: 14px;
+        vertical-align: bottom; 
+        margin-right: 10px;
+    }
+
+    .middle .right {
+        color: white;
+        font-size: 12px;
+    }
+
+    .last {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(37, 37, 37);
+        font-size: 12px;
+        color: white; 
+        padding: 5px 0 8px 0;
+        height: 20px;
+        font-size: 9px;
+    }
+
+    footer .footerContent {
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        font-size: 12px;
+        background-color: #151515;
+        border-top: 1px solid #292929;
+        padding: 10px 60px 20px 20px;
+        height: 230px;
+    }
+
+    footer .footerColumn ul {
+        display: grid;
+        list-style-type:none;
+        grid-auto-rows: 28px;
+        justify-content: center;
+        margin: 20px;
+        margin-bottom: 0;
+    }
+
+    footer .footerColumn .upper {
+        font-size: 14px;
+        color: gray;
+        font-weight: 700;
+    }
+
+    footer .footerContent .footerColumn a {
+        text-decoration: none;
+        color: inherit;
+        color: #f90;
+        font-size: 12px;
+    }
+
+    footer .footerContent .footerColumn a:hover{
+        text-decoration: underline;
+    }
+
+    footer .footerContent .languageLabel {
+        color: gray;
+        font-weight: 700;
+        font-size: 13px;
+        padding-left: 36%;
+        float: left;
+        position: reletive;
+        width: 60px;
+        line-height: 22px;
+        display: flex;
+        bottom: 50%;
+    }
+
+    footer .footerContent .changeLanguage {
+        width: 32%;
+        display: flex;
+        background: #2f2f2f;
+        border-radius: 2px;
+        position: relative;
+        right: 40%;
+        cursor: pointer;
+    }
+
+    footer .footerContent .changeLanguage .iconLanguage {
+        background: url(sprite-icons.pornhub.png) no-repeat -228px -331px;
+        float: left;
+        margin: 4px 6px;
+        width: 13px;
+        height: 13px; 
+        display: flex;
+        
+    }
+
+    footer .footerContent .changeLanguage .Language {
+        background-color:  #2f2f2f;
+        border: none;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    footer .footerContent .changeLanguage .Language:focus {
+        outline: 0;
+    }
+
+    footer .bottom {
+        background-color: black;
+        height: 65px;
+        display: grid;
+        grid-template-columns: 65% auto 120px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    footer .bottom .bottomLeft {
+        margin-left: 65px;
+    }
+
+    footer .bottom .bottomLeft a {
+     margin-right: 15px;
+     text-decoration: none;
+    }
+
+    footer .bottom .bottomRight {
+        float: right;
+        position: relative;
+        left: 20px;
+    }
+    
+    footer .bottom .bottomRight .copyright {
+        color: #666;
+        font-size: 12px;
+        align-self: center;
+        position: relative;
+        bottom: 10px;
+    }
