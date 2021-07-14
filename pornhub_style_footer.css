@@ -1,0 +1,131 @@
+
+    footer .footerContent {
+        display: flex;
+        /* grid-template-columns: repeat(4,25%); */
+        font-size: 12px;
+        background-color: #151515;
+        border-top: 1px solid #292929;
+        padding: 10px 60px 20px 20px;
+        height: 200px;
+    }
+        
+    footer .footerColumn ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 30px;
+        flex-direction: column;
+        list-style-type:none;
+        width: 90%;
+        /* grid-auto-rows: 28px; */
+        /* justify-content: center; */
+        margin: 20px 20px 0 60px;
+    }
+
+    footer .footerColumn li {
+        margin: 5px 0 5px 0;
+    }
+
+    footer .footerColumn .upper {
+        font-size: 14px;
+        color: gray;
+        font-weight: 700;
+    }
+
+    footer .footerContent .footerColumn a {
+        text-decoration: none;
+        color: #f90;
+        font-size: 12px;
+    }
+
+    footer .footerContent .footerColumn a:hover{
+        text-decoration: underline;
+    }
+
+    footer .footerContent2 {
+        background-color: #151515;
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+    }
+
+    footer .footerContent2 .languageLabel {
+        color: gray;
+        font-weight: 700;
+        font-size: 13px;
+        padding-left: 10%;
+        width: 60px;
+        line-height: 22px;
+        bottom: 50%;
+    }
+
+    footer .footerContent2 .changeLanguage {
+        width: 7.5%;
+        display: flex;
+        background: #2f2f2f;
+        border-radius: 2px;
+        position: relative;
+        right: 34%;
+        cursor: pointer;
+        height: 20px;
+        left: 1%;
+    }
+
+    footer .footerContent2 .changeLanguage .iconLanguage {
+        background: url(sprite-icons.pornhub.png) no-repeat -228px -331px;
+        float: left;
+        margin: 4px 6px;
+        width: 13px;
+        height: 13px; 
+        display: flex;
+        
+    }
+
+    footer .footerContent2 .changeLanguage .Language {
+        background-color:  #2f2f2f;
+        border: none;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    footer .footerContent2 .changeLanguage .Language:focus {
+        outline: 0;
+    }
+
+    footer .bottom {
+        background-color: black;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        /* grid-template-columns: 65% auto 120px; */
+        /* justify-content: center; */
+        /* align-content: center; */
+    }
+
+    footer .bottom .bottomLeft {
+        margin-left: 125px;
+    }
+
+    footer .bottom .bottomLeft a {
+     margin-right: 15px;
+     text-decoration: none;
+    }
+
+    footer .bottom .bottomRight {
+        float: right;
+        position: relative;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        left: 43%;
+
+    }
+    
+    footer .bottom .bottomRight .copyright {
+        color: #666;
+        font-size: 12px;
+        /* display: flex; */
+        position: relative;
+        bottom: 10px;
+        top: 1px;
+    }
